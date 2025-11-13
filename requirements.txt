@@ -1,0 +1,9 @@
+transformers
+torch
+sentencepiece
+accelerate
+scipy
+streamlit
+fastapi
+uvicorn
+pytest
