@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Response
 from pydantic import BaseModel
-from .processing import translate_text, synthesize_speech
+from processing import translate_text, synthesize_speech
 from scipy.io.wavfile import write as write_wav
 import io
 
@@ -16,6 +16,9 @@ app = FastAPI(
 class TextToTranslate(BaseModel):
     text: str
 
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the English-Russian TTS API. Please go to /docs to test the endpoints."}
 
 @app.post("/synthesize")
 async def synthesize(item: TextToTranslate):
