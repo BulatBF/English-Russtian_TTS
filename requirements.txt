@@ -1,5 +1,6 @@
 transformers
 torch
+torchvision
 sentencepiece
 sacremoses
 scipy
