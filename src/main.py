@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Response
 from pydantic import BaseModel
-from processing import translate_text, synthesize_speech
+from src.processing import translate_text, synthesize_speech
 from scipy.io.wavfile import write as write_wav
 import io
 

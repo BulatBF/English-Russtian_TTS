@@ -1,10 +1,11 @@
 transformers
 torch
 sentencepiece
-accelerate
+sacremoses
 scipy
 streamlit
 fastapi
 uvicorn
 pytest
-sacremoses
+numpy
+accelerate
